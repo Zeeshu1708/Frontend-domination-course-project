@@ -1,0 +1,95 @@
+@import url('https://fonts.googleapis.com/css2?family=Yantramanav:wght@100;300;400;500;700;900&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Yantramanav", sans-serif;
+}
+html,body{
+    width: 100%;
+    height: 100%;
+}
+
+main{
+    width: 100vw;
+    height: 100%;
+}
+
+main>nav{
+    /* background-color: red; */
+    width: 100%;
+    padding: 0 3%;
+}
+
+nav>ul{
+    list-style: none;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 3vw;
+}
+nav>ul>li{
+    font-size: 16px;
+    font-weight: 600;
+}
+nav>ul>i{
+    padding: 8px;
+    color: white;
+    background-color: black;
+    border-radius: 50%;
+}
+
+#heading{
+    width: 100%;
+    max-height: 70vh;
+    padding: 2vw 6vw;
+}
+
+#heading>.headOne>h1{
+    /* background-color: yellow; */
+    letter-spacing: -.1vw;
+    line-height: 1.1;
+    width: 36vw;
+    font-size: 4.7vw;
+    font-weight: 400;
+}
+
+#heading>.headTwo{
+    /* background-color: yellow; */
+    display: flex;
+    justify-content: space-between;
+    padding-top: 1.7vw;
+}
+#heading>.headTwo>.left>p{
+    /* background-color: green; */
+    font-size: 1.3vw;
+}
+#heading>.headTwo>.right{
+    width: 20vw;
+}
+#heading>.headTwo>.right>.rightItems{
+    border-top: 3px solid black;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+#heading>.headTwo>.right>.rightItems>i{
+    font-size: 25px;
+}
+#heading>.headTwo>.right h3{
+    font-size: 1.5vw;
+    font-weight: 500;
+    padding: 12px 0;
+}
+#image{
+    margin-top: 2vw;
+    width: 100%;
+    overflow: hidden;
+}
+#image>img{
+    width: 100vw;
+    height: 17vw;
+    object-fit: cover;
+    object-position: 0px -200px;
+}
