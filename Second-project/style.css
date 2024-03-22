@@ -1,0 +1,124 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+Devanagari:wght@100..900&family=Sofia+Sans:ital,wght@0,1..1000;1,1..1000&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Noto Sans Devanagari", sans-serif;
+}
+
+html,body{
+    width: 100%;
+    height: 100%;
+}
+
+main{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: end;
+    justify-content: center;
+}
+
+#left{
+    width: 35%;
+    height: 82%;
+    display: flex;
+    flex-direction: column;
+    justify-content:space-between;
+    padding-bottom: 3%;
+}
+
+#left>h1{
+    font-size: 7vw;
+    font-weight: 400;
+    line-height: 1;
+}
+
+#left>.bottom>.colors{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 8px;
+    margin-bottom: 2vw;
+    width: fit-content;
+    border: 2px solid #000000;
+    border-radius: 50px;
+}
+
+#left>.bottom>.colors>.brown{
+    width: 1vw;
+    height: 1vw;
+    border-radius: 50%;
+    background-color: burlywood;
+    margin: 0 .5vw 0 1vw;
+}
+#left>.bottom>.colors>.maroon{
+    width: 1vw;
+    height: 1vw;
+    border-radius: 50%;
+    background-color: maroon;
+}
+
+#left>.bottom>.dets>h2{
+    font-size: 1.7vw;
+    font-weight: 600;
+}
+#left>.bottom>.dets>p{
+   width: 70%;
+}
+
+
+#right{
+    position: relative;
+    width: 35%;
+    height: 75%;
+    padding: 0 7vw;
+}
+
+#right>.price{
+    width: 100%;
+    height: 12%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+#right>.price>.rating{
+    display: flex;
+    align-items: center;
+}
+#right>.price>.rating>h4{
+    margin-right: .7vw;
+    font-size: .7vw;
+}
+#right>.price>.rating>i{
+    font-size: .7vw;
+}
+#right>img{
+    width: 100%;
+    overflow: hidden;
+    object-fit: cover;
+}
+#right>.cart{
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    top: 7vw;
+    right: 2vw;
+    width: 8vw;
+    height: 8vw;
+    background: #000;
+    border-radius: 50%;
+}
+#right>.cart>h3{
+    color: #ffffffd3;
+    font-size: 1.1vw;
+    font-weight: 400;
+}
+#right>h4{
+    position: absolute;
+    top: 22vw;
+    left: -4vw;
+    rotate:  -90deg;
+    font-size: 2vw;
+}
