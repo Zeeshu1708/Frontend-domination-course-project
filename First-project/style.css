@@ -74,8 +74,12 @@ nav>ul>i{
     align-items: center;
     justify-content: space-between;
 }
-#heading>.headTwo>.right>.rightItems>i{
+.rightItems>i{
     font-size: 25px;
+    opacity: 0;
+}
+.rightItems:hover i{
+   opacity: 1;
 }
 #heading>.headTwo>.right h3{
     font-size: 1.5vw;
@@ -92,4 +96,46 @@ nav>ul>i{
     height: 17vw;
     object-fit: cover;
     object-position: 0px -200px;
+}
+
+@media (max-width: 768px) {
+    nav>ul>li{
+        display: none;
+    }
+    #heading>.headOne>h1{
+        width: 100%;
+        font-size: 8vw;
+        font-weight: 500;
+    }
+    
+    #heading>.headTwo{
+        /* background-color: yellow; */
+        flex-direction: column;
+        padding-top: 10vw;
+    }
+    #heading>.headTwo>.left>p{
+        /* background-color: green; */
+        font-size: 3.2vw;
+        margin-bottom: 8vw;
+    }
+    #heading>.headTwo>.right{
+        width: 70%;
+    }
+    #heading>.headTwo>.right>.rightItems{
+        border-top: 2px solid black;
+    }
+    .rightItems>i{
+        font-size: 15px;
+        opacity: 1;
+    }
+    #heading>.headTwo>.right h3{
+        font-size: 4vw;
+        font-weight: 500;
+    }
+    #image>img{
+        /* margin-top: 15vh; */
+        height: 100%;
+        object-fit: cover;
+        object-position: top;
+    }
 }
