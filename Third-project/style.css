@@ -73,7 +73,7 @@ main>#container{
 }
 #container>#head{
     width: 100%;
-    min-height: 50%;
+    height: 50%;
     /* background-color: aquamarine; */
     display: flex;
     overflow-y: scroll;
@@ -97,10 +97,11 @@ main>#container{
   }
 
 #container>#head>.headContainer{
+    /* background-color: red; */
     min-width: 100vw;
     height: 100%;
     display: flex;
-    align-items: top;
+    align-items: center;
     justify-content: center;
     padding-top: 5%;
 }
@@ -134,4 +135,32 @@ main>#container{
     height: 100%;
     object-fit: cover;
     object-position: center;
+}
+
+@media (max-width: 1000px) {
+    #firstNav{
+        /* background-color: red; */
+        height: 12vw;
+    }
+    #firstNav>.logo>.circle{
+        width: 2.5vh;
+        height: 2.5vh;
+    }
+    #firstNav>ul{
+        display: none;
+    }
+    #secondNav>ul{
+        display: none;
+    }
+    #head>.headContainer>h2{
+        margin-right: 3vh; 
+        font-size: 1.5vh;
+    }
+    .headContainer>.heading>h3{
+        font-size: 1.9vh;
+    }
+    .headContainer>.heading>h1{
+        font-size: 9vh;
+        line-height: .9;
+    }
 }
